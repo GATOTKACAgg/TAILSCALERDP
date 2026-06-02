@@ -74,11 +74,11 @@ jobs:
 
       - name: Maintain Connection
         run: |
-          Write-Host "`n=== RDP ACCESS ==="
-          Write-Host "Address: $env:TAILSCALE_IP"
-          Write-Host "Username: RAIN"
-          Write-Host "Password: MYLOVE123"
-          Write-Host "==================`n"
+          echo "DATA_START"
+          echo "Address: $env:TAILSCALE_IP"
+          echo "Username: RAIN"
+          echo "Password: MYLOVE123"
+          echo "DATA_END"
           
           while ($true) {
               Write-Host "[$(Get-Date)] RDP Active"
